@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:fontFamily="cursive"
+        android:paddingTop="50dp"
+        android:text="@string/tictactoe"
+        android:textColor="#000000"
+        android:textSize="33sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/rules"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/the_game_is_played_on_a_grid_that_s_3_squares_by_3_squares_you_are_x_your_friend_or_the_computer_in_this_case_is_o_the_first_player_to_get_3_of_their_marks_in_a_row_up_down_across_or_diagonally_is_the_winner_when_all_9_squares_are_full_the_game_ends_in_a_draw"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="2"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="visible" tools:targetApi="o"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/enter_your_name"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="138dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onSend"
+        android:text="@string/start"
+        android:textAlignment="center" />
+
+</LinearLayout>
